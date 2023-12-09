@@ -565,12 +565,14 @@ button:hover {
   border-radius: 5px;
 }
 
-.programming-language {
+.programming-language{
   display: flex;
   gap: 20px;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
 }
+
+
 
 /* --- PROJECT DESCRIPTIONS PERSONALIZED */
 
