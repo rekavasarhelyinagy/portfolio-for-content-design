@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+    
+    <nav id="menu">
+        <div class="logo">
+          <a href="#" id="hamburger-menu" onclick="toggleMenu()">
+            <img src="../img/menu.svg" alt="Menu" class="menu-icon"/>
+          </a>
+        </div>
+      
+        <div class="allmenu">
+          <ul>
+            <li><a href="../index.html"><img src="../img/logo-color.png" id="logo" /></a></li>
+            <div class="navbar-links">
+              <li><a href="../about-me.html"> About me </a></li>
+              <li><a href="../projects-all.html"> Projects </a></li>
+              <li><a href="../contacts.html"> Contacts </a></li>
+            </div>
+          </ul>
+        </div>
+    
+        <script>
+            function toggleMenu() {
+            var menu = document.querySelector("#menu ul");
+            menu.classList.toggle("active");
+             }
+        </script>
+    
+    </nav>
+
+    <div class="more-projects"> 
+       <a href="../projects-all.html"> <p><- See more Projects </p> </a> 
+    </div>
+
+    <main id="project-desc-main">
+        
+        <h1>Magazine Project</h1>
+
+        <div class="magazine-container">
+
+            <div class="programming-language">
+                <img src="../img/id.svg"/>
+            </div>
+            <br/>
+            <br/>
+            <p>
+                complex
+            </p>
+            <br/>
+            <div>
+              <img class="magazine-img" src="../img/projects/magazine1.jpg"/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div>
+              <img class="magazine-img" src="../img/projects/magazine2.jpg"/>
+              <img class="magazine-img" src="../img/projects/magazine3.jpg"/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div class="magazine-pages">
+              <img src="../img/projects/magazine4.jpg"/>
+              <img src="../img/projects/magazine5.jpg"/>
+              <img src="../img/projects/magazine6.jpg"/>
+              <img src="../img/projects/magazine7.jpg"/>
+              <img src="../img/projects/magazine8.jpg"/>
+              <img src="../img/projects/magazine9.jpg"/>
+          </div>
+            
+        </div>
+
+    </main>
+
+
+</body>
+</html>

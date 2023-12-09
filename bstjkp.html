@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+    
+    <nav id="menu">
+        <div class="logo">
+          <a href="#" id="hamburger-menu" onclick="toggleMenu()">
+            <img src="../img/menu.svg" alt="Menu" class="menu-icon"/>
+          </a>
+        </div>
+      
+        <div class="allmenu">
+          <ul>
+            <li><a href="../index.html"><img src="../img/logo-color.png" id="logo" /></a></li>
+            <div class="navbar-links">
+              <li><a href="../about-me.html"> About me </a></li>
+              <li><a href="../projects-all.html"> Projects </a></li>
+              <li><a href="../contacts.html"> Contacts </a></li>
+            </div>
+          </ul>
+        </div>
+    
+        <script>
+            function toggleMenu() {
+            var menu = document.querySelector("#menu ul");
+            menu.classList.toggle("active");
+             }
+        </script>
+    
+    </nav>
+
+    <div class="more-projects"> 
+       <a href="../projects-all.html"> <p><- See more Projects </p> </a> 
+    </div>
+
+    <main id="project-desc-main">
+        
+        <h1>Game Project - Bring Spring to Jönköping</h1>
+
+        <div class="bstjkp-container">
+            <div class="programming-language">
+                <img src="../img/js.png"/>
+            </div>
+            <br/>
+            <br/>
+            <p>
+                (multyplayer, js)
+            </p>
+            <br/>
+            <p>
+                Find a friend to cooperate and click on the image to play!
+            </p>
+            <div>
+               <a href="https://ju-nmd2022.github.io/fop-final-project-project-86/"> <img class="project-desc-img" src="../img/projects/bstjkp.jpg"/> </a>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <p>
+                We had to make a document about planning the game:
+            </p>
+            <div>
+                <img class="bstjkp-planning-img" src="../img/projects/bstjkp-planning1.jpg"/>
+                <img class="bstjkp-planning-img" src="../img/projects/bstjkp-planning2.jpg"/>
+                <img class="bstjkp-planning-img" src="../img/projects/bstjkp-planning3.jpg"/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <p>
+                We also had to make a short trailer for the game. We were paying attention to reflect the adventorous, playful vibe of the game. Since our story was to create spring, we shooted our trailer in two rounds. First, in the winter when it was snowing, and second already in spring when flowers were blooming. 
+            </p>
+            <p>
+                Take a look at it:
+            </p>
+            <br/>
+            <video width="600px" controls>
+                <source src="../img/projects/trailer.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+    </main>
+
+
+</body>
+</html>
