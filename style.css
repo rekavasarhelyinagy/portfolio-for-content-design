@@ -790,4 +790,28 @@ button:hover {
 .ui-temporary-img-landing-mobile {
   width: 800px;
   height: 1820px;
-  object-fit
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-sitemap {
+  width: 1300px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-cschemes {
+  width: 800px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-versions {
+  width: 1300px;
+  height: 930px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
