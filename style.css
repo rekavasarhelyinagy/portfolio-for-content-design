@@ -570,6 +570,7 @@ button:hover {
   gap: 20px;
   width: 80px;
   height: 80px;
+  margin-left: 50px;
 }
 
 
@@ -723,6 +724,32 @@ button:hover {
   border-radius: 5px;
 }
 
+
+/* --- PROJECT DESCRIPTIONS - TEMPORARY UI --- */
+
+
+#ui-temporary-main {
+  margin-top: 60px;
+}
+
+#ui-temporary-main h1 {
+  margin-bottom: 50px;
+}
+
+.ui-temporary-content {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ui-temporary-content img{
+  margin-top: 80px;
+}
+
+.ui-temporary-content p{
+  align-items: start;
+}
+
 .ui-temporary-img {
   width: 600px;
   height: 350px;
@@ -733,8 +760,8 @@ button:hover {
 }
 
 .ui-temporary-img-colour{
-  width: 1200px;
-  height: 500px;
+  width: 1000px;
+  height: 400px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -763,28 +790,4 @@ button:hover {
 .ui-temporary-img-landing-mobile {
   width: 800px;
   height: 1820px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.ui-temporary-img-sitemap {
-  width: 1300px;
-  height: 700px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.ui-temporary-img-cschemes {
-  width: 800px;
-  height: 650px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.ui-temporary-img-versions {
-  width: 1300px;
-  height: 930px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
+  object-fit
