@@ -728,6 +728,63 @@ button:hover {
   height: 350px;
   object-fit: cover;
   border-radius: 5px;
-  border: 5px solid black;
-  padding: 30px;
+  /* border: 5px solid black;
+  padding: 30px; */
 }
+
+.ui-temporary-img-colour{
+  width: 1200px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-icons{
+  width: 1400px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-buttons {
+  width: 680px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-landing-web{
+  width: 1150px;
+  height: 1300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-landing-mobile {
+  width: 800px;
+  height: 1820px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-sitemap {
+  width: 1300px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-cschemes {
+  width: 800px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-versions {
+  width: 1300px;
+  height: 930px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
