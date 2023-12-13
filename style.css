@@ -56,6 +56,14 @@ button:hover {
   box-shadow: 5px 5px 5px rgba(138, 138, 138, 0.692);
 }
 
+@media only screen and (max-width: 700px) {
+  .project-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* NAVBAR */
 
 #menu {
@@ -186,6 +194,46 @@ button:hover {
   }
 }
 
+
+/* FOOTER */
+
+#footer-container {
+  background-color: rgb(81, 179, 209);
+  width: 100%;
+  height: 100px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-contacts-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.footer-contacts-email img{
+  width: 37px;
+}
+
+.footer-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+.footer-name p{
+  color: #081e3f;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+
+
+
 /* LANDING PAGE (HOME) */
 
 #home-container {
@@ -210,6 +258,39 @@ button:hover {
   flex-direction: column;
   align-items: center;
   padding-top: 200px;
+}
+
+@media screen and (min-width: 950px) { 
+  .home-top-intro-after {
+    display: none;
+    width: 40vw;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 950px) { 
+  .home-top-intro {
+    display: none;
+  }
+
+  .home-top-intro-after {
+    margin-bottom: 30px;
+  }
+
+  .home-top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .home-top-intro-line {
+    width: 100%;
+  }
+  .home-top-mainpic img{
+    border-radius: 10px;
+  }
 }
 
 #text2 {
@@ -283,10 +364,24 @@ button:hover {
 
 .home-projects-section-project1 {
   display: flex;
+  flex-direction: row;
   width: 60%;
   min-width: 900px;
   gap: 50px;
   margin-top: 120px;
+}
+
+@media screen and (max-width: 950px) {
+  .home-projects-section-project1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .home-projects-container h1{
+    text-align: center;
+    margin: auto;
+  }
 }
 
 .home-projects-section-project1-img {
@@ -294,6 +389,16 @@ button:hover {
 }
 
 .home-projects-section-project1-img img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.home-projects-section-project2-img-after {
+  width: 60%;
+}
+
+.home-projects-section-project2-img-after img {
   object-fit: cover;
   width: 100%;
   border-radius: 10px;
@@ -318,6 +423,25 @@ button:hover {
   min-width: 900px;
   gap: 50px;
   margin-top: 120px;
+}
+
+@media screen and (min-width: 950px) {
+  .home-projects-section-project2-img-after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .home-projects-section-project2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-projects-section-project2-img {
+    display: none;
+  }
 }
 
 .home-projects-section-project2-img {
@@ -348,6 +472,16 @@ button:hover {
   margin-top: 120px;
 }
 
+@media screen and (max-width: 950px) {
+  .home-projects-section-project3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
 .home-projects-section-project3-img {
   width: 60%;
 }
@@ -368,18 +502,20 @@ button:hover {
   align-items: center;
 }
 
-.home-projects-more {
+.projects-more {
   display: flex;
   justify-content: center;
   margin-top: 130px;
-  padding-bottom: 200px;      /*temporarly only for asthetics*/
 }
 
-.home-projects-more button{
+.projects-more button{
   width: 300px;
   height: 50px;
 }
 
+.home-projects-container h3 {
+  margin-bottom: 10px;
+}
   
 
 /* ABOUT ME */
@@ -387,7 +523,7 @@ button:hover {
 .aboutme-pic {
   height: 50vw;
   width: 30vw;
-  max-height: 580px;
+  max-height: 600px;
   max-width: 400px;
   object-fit: cover;
   border-radius: 5px;
@@ -448,7 +584,6 @@ button:hover {
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
-  padding-bottom: 200px;      /*temporarly only for asthetics*/
 }
 
 .aboutme-languages-container ul{
@@ -479,8 +614,31 @@ button:hover {
 
 .contacts-container {
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.contacts-row{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.contacts-row img{
+  width: 40px;
+}
+
+.contacts-row p{
+  font-size: 22px;
+}
+
+.linkedin-link a:link,
+.linkedin-link a:visited {
+  color: #51b3d1;
+  text-decoration: none;
 }
 
 /*  PROJECTS  */
@@ -492,6 +650,7 @@ button:hover {
   font-size: 20px;
   margin-top: 40px;
   margin-bottom: 30px;
+  gap: 10px;
 }
 
 .projects-filters a {
@@ -534,22 +693,18 @@ button:hover {
 
 /* PROJECT DESCRIPTIONS */
 
-#project-desc-main {
+#project-descriptions-main {
   margin-top: 60px;
 }
 
-#project-desc-main h1 {
+#project-descriptions-main h1 {
   margin-bottom: 50px;
 }
 
-.more-projects p {
+.more-projects button {
   margin-top: 130px;
   margin-left: 70px;
   text-decoration: none;
-}
-
-.more-projects p:hover {
-  font-weight: bold;
 }
 
 .more-projects a:link,
@@ -571,175 +726,252 @@ button:hover {
   width: 80px;
   height: 80px;
   margin-left: 50px;
+  margin-bottom: 90px;
+}
+
+@media only screen and (max-width: 700px) {
+  .programming-language{
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 90px;
+  }
 }
 
 
 
 /* --- PROJECT DESCRIPTIONS PERSONALIZED */
 
+/* --- PROJECT DESCRIPTIONS - LUNAR-LANDER-GAME --- */
+
+.lunar-lander-img1 {
+  width: 90vw;
+  max-width: 600px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
 .lunar-lander-img2 {
-  width: 300px;
-  height: 360px;
-  object-fit: cover;
+  width: 90vw;
+  max-width: 350px;
   border-radius: 5px;
 }
 
 .lunar-lander-img3 {
-  width: 600px;
-  height: 350px;
-  object-fit: cover;
+  width: 90vw;
+  max-width: 700px;
   border-radius: 5px;
 }
+
+.lunar-lander-part1{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lunar-lander-part2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lunar-lander-part1-calculation-text{
+  max-width: 900px;
+  text-align: center;
+}
+
+
+/* --- PROJECT DESCRIPTIONS - BSTJKP-GAME --- */
 
 .bstjkp-planning-img {
-  width: 430px;
-  height: 590px;
-  object-fit: cover;
+  width: 650px;
   border-radius: 5px;
 }
 
-.magazine-img {
-  width: 500px;
-  height: 345px;
-  object-fit: cover;
+.bstjkp-part1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bstjkp-img-planning {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bstjkp-img-trailer1 {
+  width: 90vw;
+  max-width: 500px;
+}
+
+.bstjkp-img-trailer2 {
+  width: 90vw;
+  max-width: 500px;
+}
+
+.bstjkp-trailer-before-after-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.bstjkp-trailer-before-after-container p {
+  max-width: 500px;
+}
+
+.bstjkp-trailer-before-container {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bstjkp-trailer-after-container {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bstjkp-img-trailer3 {
+  width: 90vw;
+  max-width: 500px;
+}
+
+.bstjkp-trailer-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bstjkp-trailer-final p{
+  max-width: 500px;
+}
+
+.bstjkp-trailer-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bstjkp-content h2{
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.bstjkp-content h3{
+  margin-bottom: 20px;
+}
+
+.bstjkp-trailer-container img{
+  margin-bottom: 15px;
   border-radius: 5px;
 }
 
-.magazine-pages {
+.bstjkp-part1 img {
+  margin-top: 20px;
+}
+
+/* --- PROJECT DESCRIPTIONS - MAGAZINE --- */
+
+.magazine-part1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.magazine-part2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.magazine-content h2 {
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+.magazine-img-cover {
+  width: 90vw;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+.magazine-img-chapters {
+  width: 90vw;
+  max-width: 530px;
+  border-radius: 5px;
+}
+
+.magazine-img-info {
+  width: 90vw;
+  max-width: 700px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.magazine-img-pages {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.magazine-pages img {
-  width: 620px;
-  height: 445px;
-  object-fit: cover;
+.magazine-img-pages img {
+  width: 90vw;
+  max-width: 620px;
   border-radius: 5px;
 }
 
-.branding-doveko-cover {
-  width: 330px;
-  height: 490px;
-  object-fit: cover;
-  border-radius: 5px;
+
+/* --- PROJECT DESCRIPTIONS - BRANDING-PERSONAL --- */
+
+.branding-personal-content {
+  display: flex;
+  flex-direction: column;
 }
 
-.branding-doveko-img {
-  width: 1100px;
-  height: 780px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.stylization-img {
-  width: 330px;
-  height: 490px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.branding-essence-poster-img {
-  width: 535px;
-  height: 690px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.branding-essence-bts{
-  width: 550px;
-  height: 380px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.branding-bookstore-prototype {
-  width: 300px;
-  height: 900px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.branding-bookstore-igpost{
-  width: 300px;
-  height: 700px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.branding-bookstore-logos {
-  width: 900px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.branding-bookstore-colours {
-  width: 420px;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.branding-bookstore-illustrations {
-  width: 900px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.branding-bookstore-mockup1 {
-  width: 460px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.branding-bookstore-mockup2 {
-  width: 500px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.branding-bookstore-mockup3 {
-  width: 330px;
-  height: 710px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.branding-bookstore-ads {
-  width: 330px;
-  height: 710px;
-  object-fit: cover;
-  border-radius: 5px;
+.branding-personal-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .branding-personal-img {
-  width: 830px;
-  height: 310px;
-  object-fit: cover;
+  width: 90vw;
+  max-width: 800px;
   border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.branding-personal-content video{
+  width: 90vw;
+  max-width: 800px;
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 
 /* --- PROJECT DESCRIPTIONS - TEMPORARY UI --- */
 
-
-#ui-temporary-main {
-  margin-top: 60px;
-}
-
-#ui-temporary-main h1 {
-  margin-bottom: 50px;
-}
-
-.ui-temporary-content {
-  margin-top: 80px;
+.ui-temporary-img {
+  margin: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .ui-temporary-content img{
@@ -750,68 +982,322 @@ button:hover {
   align-items: start;
 }
 
-.ui-temporary-img {
-  width: 600px;
-  height: 350px;
-  object-fit: cover;
+.ui-temporary-img-colour{
+  width: 90vw;
+  max-width: 1000px;
   border-radius: 5px;
-  /* border: 5px solid black;
-  padding: 30px; */
 }
 
-.ui-temporary-img-colour{
-  width: 1000px;
+.ui-temporary-img-icons{
+  width: 90vw;
+  max-width: 1100px;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-buttons {
+  width: 90vw;
+  max-width: 680px;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-landing-web{
+  width: 90vw;
+  max-width: 1150px;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-landing-mobile {
+  width: 90vw;
+  max-width: 800px;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-sitemap {
+  width: 90vw;
+  max-width: 1200px;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-cschemes {
+  width: 90vw;
+  max-width: 800px;
+  border-radius: 5px;
+}
+
+.ui-temporary-img-versions {
+  width: 90vw;
+  max-width: 1200px;
+  border-radius: 5px;
+}
+
+
+
+/* --- PROJECT DESCRIPTIONS - BRANDING-ESSENCE --- */
+
+.branding-essence-content {
+  display: flex;
+  flex-direction: column;
+} 
+
+.branding-essence-img-logos-container{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.branding-essence-content p{
+  align-items: start;
+}
+
+.branding-essence-img {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.branding-essence-img-logos {
+  width: 90vw;
+  max-width: 500px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.branding-essence-img-poster {
+  width: 90vw;
+  max-width: 535px;
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.branding-essence-content video{
+  width: 90vw;
+  max-width: 900px;
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.branding-essence-bts{
+  width: 90vw;
+  max-width: 550px;
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.above-branding-essence-img-logos-container {
+  margin-bottom: 60px;
+}
+
+.below-branding-essence-img-logos-container {
+  margin-top: 60px;
+}
+
+/* --- PROJECT DESCRIPTIONS - STYLIZATION --- */
+
+.stylization-img {
+  width: 330px;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.stylization-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- PROJECT DESCRIPTIONS - BRANDING-DOVEKO --- */
+
+.branding-doveko-middlepositioning{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.branding-doveko-part1 {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.branding-doveko-part2{
+  margin-bottom: 50px;
+}
+
+.branding-doveko-cover {
+  width: 330px;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.branding-doveko-img {
+  width: 90vw;
+  max-width: 1100px;
+  border-radius: 5px;
+}
+
+.branding-doveko-content h2{
+  margin-bottom: 20px;
+}
+
+
+
+/* --- PROJECT DESCRIPTIONS - BRANDING-BOOKSTORE --- */
+
+.branding-bookstore-img-prototype {
+  width: 300px;
+  height: 900px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.branding-bookstore-img-logos {
+  width: 90vw;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+.branding-bookstore-img-colours {
+  width: 420px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.branding-bookstore-img-illustrations {
+  width: 90vw;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+.branding-bookstore-img-mockup1 {
+  width: 460px;
   height: 400px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.ui-temporary-img-icons{
-  width: 1400px;
-  height: 600px;
+.branding-bookstore-img-mockup2 {
+  width: 500px;
+  height: 300px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.ui-temporary-img-buttons {
-  width: 680px;
-  height: 240px;
+.branding-bookstore-img-mockup3 {
+  width: 330px;
+  height: 710px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.ui-temporary-img-landing-web{
-  width: 1150px;
-  height: 1300px;
+.branding-bookstore-img-ads {
+  width: 330px;
+  height: 710px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.ui-temporary-img-landing-mobile {
-  width: 800px;
-  height: 1820px;
+.branding-bookstore-part1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.branding-bookstore-part2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.branding-bookstore-content h2{
+  margin-bottom: 20px;
+}
+
+.branding-bookstore-part1 img{
+  margin-bottom: 70px;
+}
+
+.branding-bookstore-part2{
+  margin-bottom: 70px;
+}
+
+.branding-bookstore-intro-text{
+  margin-bottom: 70px;
+}
+
+
+/* --- PROJECT DESCRIPTIONS - TODO-LIST --- */
+
+.todo-list-part1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.todo-list-img {
+  width: 340px;
+  height: 710px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* --- PROJECT DESCRIPTIONS - SKEUMORPHISM --- */
+
+.skeumorphism-img1 {
+  width: 460px;
+  height: 300px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.ui-temporary-img-sitemap {
-  width: 1300px;
-  height: 700px;
+.skeumorphism-img2 {
+  width: 460px;
+  height: 300px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.ui-temporary-img-cschemes {
-  width: 800px;
-  height: 650px;
-  object-fit: cover;
-  border-radius: 5px;
+.skeumorphism-arrow{
+  font-size: 100px;
 }
 
-.ui-temporary-img-versions {
-  width: 1300px;
-  height: 930px;
-  object-fit: cover;
-  border-radius: 5px;
+.skeumorphism-img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
 }
 
+@media only screen and (max-width: 1350px) {
+  .skeumorphism-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+  }
+}
